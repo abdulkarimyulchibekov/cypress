@@ -1,0 +1,23 @@
+{
+  "extends": "../tsconfig.json",
+  "include": [
+    "**/*.ts",
+    "integration/user-journey.spec.js"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/.*/"
+  ],
+  "compilerOptions": {
+    "types": [
+      "cypress"
+    ],
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "isolatedModules": false,
+    "allowJs": true,
+    "noEmit": true
+  }
+}
